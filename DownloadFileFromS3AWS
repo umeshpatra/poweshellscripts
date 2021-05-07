@@ -13,3 +13,6 @@ File = ‘C:\artifacts\weisfm\xxx.zip’
 }
 
 Read-S3Object @Params
+
+# Write-S3Object can be used for upload by help of AssumeRole (Accessible within VPC)
+# Write from outside VPC can be feasible with IAM Role access
