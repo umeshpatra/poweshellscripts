@@ -1,0 +1,15 @@
+aws Get-S3Bucket -BucketName name
+-UseAccelerateEndpoint <SwitchParameter>
+
+$BucketName = "name"
+$Params = @{
+
+BucketName = $BucketName
+
+Key= ‘xxx.zip’
+
+File = ‘C:\artifacts\weisfm\xxx.zip’
+
+}
+
+Read-S3Object @Params
